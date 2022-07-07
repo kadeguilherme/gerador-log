@@ -1,4 +1,6 @@
 const logger = require('./log');
 
-logger.info("informando tudo certo");
-logger.error("ERROR");
+logger.info("TESTE INFO");
+logger.error("TESTE ERROR");
+logger.debug("TESTE DEBUG");
+logger.warn("TESTE WARN");
