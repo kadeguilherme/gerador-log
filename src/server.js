@@ -20,10 +20,6 @@ app.get('/style.css', function (req, res, next) {
     res.sendFile('C:/Users/Guilherme/Documents/workspace/gerador-log/public/style.css');
 });
 
-app.get('/index.js', function (req, res, next) {
-    res.sendFile('C:/Users/Guilherme/Documents/workspace/gerador-log/public/index.js');
-});
-
 
 app.post('/', async (req, res, next)=> {
    
