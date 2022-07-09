@@ -1,6 +1,5 @@
 const image = document.createElement('img')
 
-image.src = 'https://raw.githubusercontent.com/kadeguilherme/api-pokemon/460e2ec1ae2400e37bc137aada2cb6779bf4da2c/public/emoji.svg'
-
-document.querySelector('.images').appendChild(image)
-console.log("oi");
+image.src = 'https://raw.githubusercontent.com/kadeguilherme/gerador-log/97214b21cb77a9fac3b62cc1aa476add093ac26e/public/avatar2.svg'
+image.width = 70;
+document.querySelector('.avatar').appendChild(image);

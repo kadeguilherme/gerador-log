@@ -1,4 +1,5 @@
 const logger = require('../log');
+const path = require('path')
 
 const express = require('express');
 const app = express();
@@ -11,13 +12,18 @@ app.use(bodyParser.json());
 
 
 app.get('/', function (req, res, next) {
-   
-    res.sendFile('C:/Users/Guilherme/Documents/workspace/gerador-log/public/index.html');
+    res.sendFile(path.join(__dirname, '../', 'public', 'index.html'));
     
 });
 
+
+
 app.get('/style.css', function (req, res, next) {
-    res.sendFile('C:/Users/Guilherme/Documents/workspace/gerador-log/public/style.css');
+    res.sendFile(path.join(__dirname, '../', 'public', 'style.css'));
+});
+
+app.get('/index.js', function (req, res, next) {
+    res.sendFile(path.join(__dirname, '../', 'public', 'index.js'));
 });
 
 
@@ -32,7 +38,7 @@ app.post('/', async (req, res, next)=> {
         }else if (req.body.options == 4){
             logger.warn(req.body.nome);
         }
-    res.sendFile('C:/Users/Guilherme/Documents/workspace/gerador-log/public/index.html');
+    res.sendFile(path.join(__dirname, '../', 'public', 'index.html'));
 })
 
 
