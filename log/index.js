@@ -16,7 +16,7 @@ logger = createLogger({
         myFormat
     ),
 transports: [
-    new transports.File({ filename: 'logs/app.log', level: 'silly' }),
+    new transports.File({ filename: '/logs/app.log', level: 'silly' }),
 ]
 });
 
