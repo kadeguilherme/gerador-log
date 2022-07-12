@@ -1,4 +1,4 @@
-O projeto "Gerador de Logs" é uma pagina web que tem como função gerar logs.
+O projeto Gerador de Logs é uma pagina web que tem como função gerar logs.
 O projeto tem finalidade de simula uma aplicaçao que gere logs.
 ## 💻 Gerador de Log
   - É usado no projeto que com Grafana Link do projeto: https://github.com/kadeguilherme/loki
